@@ -7,64 +7,72 @@
     <style>
       body {
         margin: 0;
+        padding: 0;
         height: 100vh;
+        background-color: black;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        background-color: #ffb6c1;
+        justify-content: center;
+        color: white;
         font-family: Arial, sans-serif;
       }
 
-      .container {
-        text-align: center;
-        background-color: white;
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        max-width: 80%;
+      .image-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
       }
 
-      h1 {
-        color: #808080;
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+      .vertical-image {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
       }
 
-      p {
-        color: #666;
-        font-size: 1.2rem;
-      }
-
-      .sad-face {
-        font-size: 5rem;
-        margin-bottom: 1rem;
-      }
-
-      .btn {
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        background-color: #ff69b4;
+      .back-button {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 12px 24px;
+        background-color: rgba(255, 255, 255, 0.2);
         color: white;
         text-decoration: none;
-        display: inline-block;
-        margin-top: 1rem;
-        transition: transform 0.2s;
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        transition: background-color 0.3s;
+        z-index: 10;
       }
 
-      .btn:hover {
-        transform: scale(1.1);
+      .back-button:hover {
+        background-color: rgba(255, 255, 255, 0.3);
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="sad-face">😢</div>
-      <h1>Oh no...</h1>
-      <p>Maybe you want to reconsider?</p>
-      <a href="index.html" class="btn">Try Again</a>
+    <div class="image-container">
+      <img src="/truman.jpg" alt="disappointed" class="vertical-image" />
     </div>
+    <div
+      style="
+        position: fixed;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      "
+    >
+      ur not funny lil bro
+    </div>
+    <a href="index.html" class="back-button">try again 🙄</a>
   </body>
 </html>
