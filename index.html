@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Be My Valentine?</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         margin: 0;
@@ -12,38 +16,50 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #ffb6c1;
+        background-color: #ff69b4;
         font-family: Arial, sans-serif;
-      }
-
-      .container {
-        text-align: center;
-        background-color: white;
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        max-width: 80%;
+        gap: 2rem;
       }
 
       h1 {
-        color: #ff69b4;
+        color: white;
+        font-size: 8.5rem;
+        margin: 0;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+      }
+
+      h2 {
+        color: white;
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin: 0;
+        text-align: center;
+      }
+
+      .image-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
       }
 
       .buttons {
         display: flex;
-        gap: 1rem;
-        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
       }
 
       .btn {
-        padding: 1rem 2rem;
         font-size: 1.2rem;
-        border: none;
+        border: 3px solid black;
         border-radius: 8px;
         cursor: pointer;
         transition: transform 0.2s;
+        color: black;
+        font-weight: bold;
       }
 
       .btn:hover {
@@ -51,27 +67,32 @@
       }
 
       .btn-yes {
-        background-color: #ff69b4;
-        color: white;
+        background-color: #32cd32;
+        padding: 1.2rem 2.4rem;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
       }
 
       .btn-no {
-        background-color: #808080;
-        color: white;
+        background-color: white;
+        padding: 0.8rem 1.5rem;
+        margin-bottom: 1rem;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Will You Be My Valentine?</h1>
-      <div class="buttons">
-        <button class="btn btn-yes" onclick="window.location.href='yes.html'">
-          Yes
-        </button>
-        <button class="btn btn-no" onclick="window.location.href='no.html'">
-          No
-        </button>
-      </div>
+    <div class="image-container">
+      <img src="/lillies.png" alt="disappointed" class="vertical-image" />
+    </div>
+    <h1>Laney</h1>
+    <h2>Will You Be My Valentine?</h2>
+    <div class="buttons">
+      <button class="btn btn-yes" onclick="window.location.href='yes.html'">
+        Yes
+      </button>
+      <button class="btn btn-no" onclick="window.location.href='no.html'">
+        No
+      </button>
     </div>
   </body>
 </html>
