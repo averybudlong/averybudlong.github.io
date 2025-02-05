@@ -21,21 +21,13 @@
         overflow: hidden;
       }
 
-      .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2vh;
-        height: 100vh;
-        padding: 5vh;
-        box-sizing: border-box;
-      }
-
       .image-container {
         flex: 0 0 30vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
       }
 
       .vertical-image {
@@ -47,8 +39,8 @@
 
       h1 {
         color: white;
-        font-size: 15vh;
-        margin: 0;
+        font-size: 7rem;
+        margin: 1rem;
         text-align: center;
         font-family: "Dancing Script", cursive;
         line-height: 1;
@@ -57,7 +49,7 @@
       h2 {
         color: white;
         font-size: 4vh;
-        margin: 0;
+        margin-bottom: 1rem;
         text-align: center;
       }
 
@@ -94,20 +86,18 @@
     </style>
   </head>
   <body>
-    <div class="content-wrapper">
-      <div class="image-container">
-        <img src="/lillies.png" alt="Lillies" class="vertical-image" />
-      </div>
-      <h1>Laney</h1>
-      <h2>Will You Be My Valentine?</h2>
-      <div class="buttons">
-        <button class="btn btn-yes" onclick="window.location.href='yes.html'">
-          Yes
-        </button>
-        <button class="btn btn-no" onclick="window.location.href='no.html'">
-          No
-        </button>
-      </div>
+    <div class="image-container">
+      <img src="/lillies.png" alt="Lillies" class="vertical-image" />
+    </div>
+    <h1>Laney</h1>
+    <h2>Will You Be My Valentine?</h2>
+    <div class="buttons">
+      <button class="btn btn-yes" onclick="window.location.href='yes.html'">
+        Yes
+      </button>
+      <button class="btn btn-no" onclick="window.location.href='no.html'">
+        No
+      </button>
     </div>
   </body>
 </html>
