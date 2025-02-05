@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Be My Valentine?</title>
+    <title>Oh no...</title>
     <style>
       body {
         margin: 0;
         height: 100vh;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #ffb6c1;
@@ -26,15 +25,19 @@
       }
 
       h1 {
-        color: #ff69b4;
+        color: #808080;
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
 
-      .buttons {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
+      p {
+        color: #666;
+        font-size: 1.2rem;
+      }
+
+      .sad-face {
+        font-size: 5rem;
+        margin-bottom: 1rem;
       }
 
       .btn {
@@ -43,35 +46,25 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
+        background-color: #ff69b4;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
         transition: transform 0.2s;
       }
 
       .btn:hover {
         transform: scale(1.1);
       }
-
-      .btn-yes {
-        background-color: #ff69b4;
-        color: white;
-      }
-
-      .btn-no {
-        background-color: #808080;
-        color: white;
-      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Will You Be My Valentine?</h1>
-      <div class="buttons">
-        <button class="btn btn-yes" onclick="window.location.href='yes.html'">
-          Yes
-        </button>
-        <button class="btn btn-no" onclick="window.location.href='no.html'">
-          No
-        </button>
-      </div>
+      <div class="sad-face">😢</div>
+      <h1>Oh no...</h1>
+      <p>Maybe you want to reconsider?</p>
+      <a href="index.html" class="btn">Try Again</a>
     </div>
   </body>
 </html>
